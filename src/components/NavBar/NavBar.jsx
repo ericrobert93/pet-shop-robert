@@ -1,11 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavBar.css';
+import CartWidget from '../CartWidget/CartWidget';
 function NavBar(props) {
     return (
     <>
       <div className="containerNavBar titulares">
         <h1 className="">Pet Shop Bruno</h1>
+        
         <ul className="nav justify-content-center">
           <li className="nav-item">
             <a className="nav-link bg-light itemNav" href="# top">
@@ -33,7 +35,9 @@ function NavBar(props) {
             </a>
           </li>
         </ul>
+        <CartWidget/>
       </div>
+      
       </> 
     );
 }
