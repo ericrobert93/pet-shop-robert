@@ -1,0 +1,38 @@
+.contenedor{
+    display: "block";
+    padding: 30px;
+    position: relative;
+    float: left;
+    max-width: 250px;
+    max-height: 50px;
+}
+.contenedorInterno{
+    width: 100px;
+    height: 70px;
+}
+.contenedorBotones{
+    max-height: 50px;
+}
+.botones{
+    height: 30px;
+    position: relative;
+    float: left;
+}
+.carrito{
+    padding-left: 8px;
+}
+.MuiButtonGroup-groupedOutlinedHorizontal:not(:last-child) {
+    border-right-color: rgba(0, 0, 0, 0.23) !important;
+}
+.MuiButtonGroup-groupedOutlinedHorizontal:not(:first-child) {
+    margin-left: 20px !important;
+}
+.botonAgregar{
+    position: relative;
+    float: left;
+    top: -25px;
+    text-align: center;
+    width: 160px;
+    background-color: rgb(201, 223, 103);
+    color: rgb(38, 0, 175);
+}
