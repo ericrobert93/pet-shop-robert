@@ -8,12 +8,8 @@ import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
 
 function ItemCount(props) {
-    /* const [count, setCount] = useState(0); */
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(props.initial);
     return (
-        /* <button onClick={() => setCount(count + 1)}>
-            Clickeado { count } veces
-        </button> */
         <>
         <div className='contenedor'>
         <div className='contenedorInterno'>
@@ -32,7 +28,7 @@ function ItemCount(props) {
           </Badge>
             <Button className='botones'
               onClick={() => {
-                setCount(Math.min(count + 1, 5));
+                setCount(Math.min(count + 1, props.stock));
               }}
             >
               {" "}
