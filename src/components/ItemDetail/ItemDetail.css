@@ -1,0 +1,58 @@
+.item-detail {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.parteIzquierda {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.parteDerecha {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-detail {
+    width: 100%;
+    height: 80%;
+}
+
+.img-detail img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.info {
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    padding: 20px;
+    color: brown;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.count-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    font-size: 20px;
+}
