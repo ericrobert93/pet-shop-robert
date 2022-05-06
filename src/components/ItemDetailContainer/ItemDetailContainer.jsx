@@ -1,29 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import './ItemDetailContainer.css';
-import img1 from '../images/pretal.png';
+import {useParams} from 'react-router-dom';
+import productsList from '../../data/productos';
 
-function getItem() {
-    const myPromise = new Promise((resolve, reject) => {
-        const item = {
-            id:1,
-            title: 'Pretal',
-            description: 'Pretal de doble agarre, para que tu perro no se escape!',
-            price: '$1999',
-            imageURL: img1
-        };
+function getItem(id) {
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(item);
-        }, 2000);
+            const productFound = productsList.find((product) => {
+                return Number(id) === product.id;
+            });
+            resolve(productFound);
+        }, 300);
     });
-    return myPromise;
 }
 
 function ItemDetailContainer() {
     const [item, setItem] = useState([]);
-
+    const {itemid} = useParams();
     useEffect(() => {
-        getItem()
+        getItem(itemid)
             .then(res => {
                 setItem(res);
             })
@@ -31,7 +27,7 @@ function ItemDetailContainer() {
                 console.log(err);
                 alert('Ocurrio un error, revisar la consola!');
             });
-    }, []);
+    }, [itemid]);
 
     return (
         <div className='item-detail'>

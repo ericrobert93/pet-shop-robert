@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavBar.css';
 import CartWidget from '../CartWidget/CartWidget';
+import { Link } from 'react-router-dom';
 function NavBar(props) {
     return (
     <>
@@ -10,29 +11,19 @@ function NavBar(props) {
         
         <ul className="nav justify-content-center">
           <li className="nav-item">
-            <a className="nav-link bg-light itemNav" href="# top">
-              PRODUCTOS
-            </a>
+            <Link className="nav-link bg-light itemNav" to="/category/Perros">
+              PERROS
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link bg-light itemNav" href="# top">
-              ¿DUDAS?
-            </a>
+            <Link className="nav-link bg-light itemNav" to="/category/Gatos">
+              GATOS
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link bg-light itemNav" href="# top">
-              GUÍA DE COMPRA
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link bg-light itemNav" href="# top">
-              CONTACTO
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link bg-light itemNav" href="# top">
-              GUÍA DE TALLES
-            </a>
+            <Link className="nav-link bg-light itemNav" to="/category/Aves">
+              AVES
+            </Link>
           </li>
         </ul>
         <CartWidget/>
