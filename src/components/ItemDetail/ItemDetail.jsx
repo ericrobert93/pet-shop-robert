@@ -1,8 +1,14 @@
-import React from 'react';
+import {React, useState} from 'react';
 import ItemCount from '../ItemCount/ItemCount';
-import './ItemDetail.css'
+import './ItemDetail.css';
+import { Link } from 'react-router-dom';
 
 function ItemDetail({ item }) {
+    const [Number, setNumber] = useState(false);
+    function onAdd(count) {
+        console.log('Agregaste al carritoooo ', count);
+        setNumber(true);
+    }
   return (
     <div className='item-detail'>
         <div className='parteIzquierda'>
@@ -16,7 +22,10 @@ function ItemDetail({ item }) {
                 <p>{ item?.price }</p>
                 <div className='description'>{ item?.description }</div>
                 <div className='count'>
-                    <ItemCount initial={1} stock={item?.stock} onAdd={() => {}} />
+                    {Number? 
+                    <Link to={`/cart/`}><button>Ver mas</button></Link> 
+                    : 
+                    <ItemCount initial={1} stock={item?.stock} onAdd={onAdd} />}
                 </div>
             </div>
         </div>

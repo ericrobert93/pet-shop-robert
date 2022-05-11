@@ -7,8 +7,9 @@ function NavBar(props) {
     return (
     <>
       <div className="containerNavBar titulares">
-        <h1 className="">Pet Shop Bruno</h1>
-        
+        <Link to="/" className='nav-link marca'>
+        <h1>Pet Shop Bruno</h1>
+        </Link>
         <ul className="nav justify-content-center">
           <li className="nav-item">
             <Link className="nav-link bg-light itemNav" to="/category/Perros">

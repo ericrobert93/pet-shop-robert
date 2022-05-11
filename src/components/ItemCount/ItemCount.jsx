@@ -38,7 +38,7 @@ function ItemCount(props) {
           </ButtonGroup>
           
         </div>
-        <button className='botonAgregar'>Agregar al carrito</button>
+        <button className='botonAgregar' onClick={()=> props.onAdd(count)}>Agregar al carrito</button>
       </div>
       </>
     );
