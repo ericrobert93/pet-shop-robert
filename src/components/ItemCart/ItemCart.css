@@ -1,5 +1,5 @@
-.card {
-    height: 380px;
+.card1 {
+    height: 350px;
     width: 250px;
     text-align: center;
     margin: 20px;
@@ -17,7 +17,7 @@
     width: 100%;
 }
 
-.header, .footer {
+.header {
     height: 10%;
 }
 
@@ -25,12 +25,13 @@
     border-bottom: 2px solid lightgray;
 }
 
-.footer {
+.footer1 {
     border-top: 2px solid lightgray;
+    height: 10%;
 }
 
-.content {
-    height: 80%;
+.content1 {
+    height: 60%;
 }
 
 .img-container {

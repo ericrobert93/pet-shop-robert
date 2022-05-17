@@ -3,11 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavBar.css';
 import CartWidget from '../CartWidget/CartWidget';
 import { Link } from 'react-router-dom';
-import useCartContext from '../../context/CartContext';
 
 function NavBar(props) {
-  const {contextFunction} = useCartContext();
-  contextFunction();
+  
     return (
     <>
       <div className="containerNavBar titulares">

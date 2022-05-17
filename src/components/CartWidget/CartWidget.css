@@ -6,3 +6,10 @@
     top: -75px;
     right: 30px;
 }
+.textoWidget{
+    position: relative;
+    float: right;
+    top: -60px;
+    right: 30px;
+    color: rgb(0, 61, 115);
+}

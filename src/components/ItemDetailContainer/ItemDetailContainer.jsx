@@ -17,7 +17,7 @@ function getItem(id) {
 
 function ItemDetailContainer() {
     
-    const [item, setItem] = useState([]);
+    const [item, setItem] = useState();
     const {itemid} = useParams();
     useEffect(() => {
         getItem(itemid)

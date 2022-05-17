@@ -10,7 +10,7 @@ const productsList = [
         title: 'Perros',
         description: 'Los mejores productos para tu perro.',
         category: 'Perros',
-        price: '$1999',
+        price: 1999,
         stock: 3,
         imageURL: img1
     },
@@ -19,7 +19,7 @@ const productsList = [
         title: 'Gatos',
         description: 'Los mejores productos para tu gato.',
         category: 'Gatos',
-        price: '$1498',
+        price: 1498,
         stock: 7,
         imageURL: img2
     },
@@ -28,7 +28,7 @@ const productsList = [
         title: 'Aves',
         description: 'Los mejores productos para tu ave.',
         category: 'Aves',
-        price: '$997.99',
+        price: 997.99,
         stock: 13,
         imageURL: img3
     },
@@ -37,7 +37,7 @@ const productsList = [
         title: 'Alimentos-Perros',
         description: 'Alimentos de todas las marcas para tu perrito.',
         category: 'Perros',
-        price: '$1099',
+        price: 1099,
         stock: 3,
         imageURL: img4
     },
@@ -46,7 +46,7 @@ const productsList = [
         title: 'Alimentos-Gatos',
         description: 'Alimentos de todas las marcas para tu gatito.',
         category: 'Gatos',
-        price: '$859.99',
+        price: 859.99,
         stock: 2,
         imageURL: img5
     },
@@ -55,7 +55,7 @@ const productsList = [
         title: 'Alimentos-Aves',
         description: 'Alimentos de todas las marcas para tu ave.',
         category: 'Aves',
-        price: '$219.99',
+        price: 219.99,
         stock: 6,
         imageURL: img6
     }
