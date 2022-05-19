@@ -2,18 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import './ItemDetailContainer.css';
 import {useParams} from 'react-router-dom';
-import productsList from '../../data/productos';
-
-function getItem(id) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            const productFound = productsList.find((product) => {
-                return Number(id) === product.id;
-            });
-            resolve(productFound);
-        }, 300);
-    });
-}
+import {getItemsById as getItem} from '../../data/database';
 
 function ItemDetailContainer() {
     
