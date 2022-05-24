@@ -6,7 +6,6 @@ import img5 from '../components/images/alimentoGato.jpg';
 import img6 from '../components/images/alimentoAves.jpg';
 const productsList = [
     {
-        id:1,
         title: 'Perros',
         description: 'Los mejores productos para tu perro.',
         category: 'Perros',
@@ -15,7 +14,6 @@ const productsList = [
         imageURL: img1
     },
     {
-        id:2,
         title: 'Gatos',
         description: 'Los mejores productos para tu gato.',
         category: 'Gatos',
@@ -24,7 +22,6 @@ const productsList = [
         imageURL: img2
     },
     {
-        id:3,
         title: 'Aves',
         description: 'Los mejores productos para tu ave.',
         category: 'Aves',
@@ -33,7 +30,6 @@ const productsList = [
         imageURL: img3
     },
     {
-        id:4,
         title: 'Alimentos-Perros',
         description: 'Alimentos de todas las marcas para tu perrito.',
         category: 'Perros',
@@ -42,7 +38,6 @@ const productsList = [
         imageURL: img4
     },
     {
-        id:5,
         title: 'Alimentos-Gatos',
         description: 'Alimentos de todas las marcas para tu gatito.',
         category: 'Gatos',
@@ -51,7 +46,6 @@ const productsList = [
         imageURL: img5
     },
     {
-        id:6,
         title: 'Alimentos-Aves',
         description: 'Alimentos de todas las marcas para tu ave.',
         category: 'Aves',

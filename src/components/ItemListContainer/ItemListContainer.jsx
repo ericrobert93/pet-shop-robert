@@ -24,9 +24,12 @@ function ItemListContainer({ greeting }) {
   }, [categoryid]);
 
   return (
+    <section>
     <div className="list-item-container">
       <ItemList items={products} />
     </div>
+    
+    </section>
   );
 }
 
